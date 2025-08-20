@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #BB6653;
+            width: 400px;
+            border-radius: 10px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        #proyek {
+            padding: 20px;
+            background-color: #DEE8CE;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .project {
+            background: #F08B51;
+            border: 1px solid #BB6653;
+            border-radius: 8px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .contact-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #BB6653;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form {
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px auto;
+            background: #F08B51;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        h3 {
+            margin-left: 10px;
+        }
+
+        form input, form textarea, form select {
+            width: 100%;
+            max-width: 700px;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: brown;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .select {
+            text-align: start;
+            margin-left: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #BB6653;
+            color: white;
+            margin-top: 20px;
+        }
+
+
+        @media (max-width: 768px) {
+            .projects-container {
+                grid-template-columns: 1fr; 
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            h1 {
+                width: auto; 
+            }
+
+            form input, form textarea, form select {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="proyek">
+        <div>
+            <h1>My Project</h1>
+        </div>
+        <div class="projects-container">
+            <div class="project">
+                <img src="Screenshot 2025-08-12 145824.png" alt="Proyek 1">
+                <h4>Proyek 1</h4>
+                <p>landing page website daftar mobil ferrari yang terkenal</p>
+            </div>
+
+            <div class="project">
+                <img src="Screenshot 2025-08-12 150109.png" alt="Proyek 2">
+                <h4>Proyek 2</h4>
+                <p>landing page website online shop</p>
+            </div>
+            
+            <div class="project">
+                <img src="Screenshot 2025-08-12 150141.png" alt="Proyek 3">
+                <h4>Proyek 3</h4>
+                <p>landing page website masjid</p>
+            </div>
+        </div>
+
+        <form>
+            <h3>Hubungi Saya</h3>
+            <div><input type="text" placeholder="Nama"></div>
+            <div><input type="email" placeholder="Email"></div>
+            <div class="select">
+                <label for="asal">Asal</label>
+                <select id="asal">
+                    <option value="">Sumatra</option>
+                    <option value="">Jawa</option>
+                    <option value="">Kalimantan</option>
+                </select>
+            </div>
+            <div><textarea rows="4" placeholder="Pesan"></textarea></div>
+            <div><button type="submit">Kirim</button></div>
+        </form>
+    </section>
+
+    <button class="contact-btn">Hubungi Saya</button>
+
+    <footer> &copy; 2025 Muhammad Harits. All rights reserved.</footer>
+</html>

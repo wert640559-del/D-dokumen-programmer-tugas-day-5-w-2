@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0d0d0d;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            z-index: 10;
+        }
+        nav h1 {
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00ff99;
+        }
+
+        /* Hero section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 10px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+        .hero p {
+            max-width: 600px;
+            margin-top: 15px;
+            opacity: 0.8;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #00ff99;
+            color: black;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #00cc77;
+        }
+
+        /* Projects */
+        .projects {
+            padding: 80px 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .project {
+            background: #1a1a1a;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .project img {
+            width: 100%;
+            display: block;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .project-content {
+            padding: 15px;
+        }
+        .project-content h3 {
+            margin-bottom: 10px;
+        }
+        .project-content p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            opacity: 0.7;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive teks hero */
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>MyPortfolio</h1>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Hi, I'm Harits 👋</h2>
+        <p>A passionate Frontend & Backend Developer who loves building clean, minimal, and impactful digital experiences.</p>
+        <a href="#projects"><button class="btn">View My Work</button></a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="project">
+            <img src="https://via.placeholder.com/400x250" alt="Project 1">
+            <div class="project-content">
+                <h3>Project One</h3>
+                <p>Modern and responsive web design for a startup company.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="https://via.placeholder.com/400x250" alt="Project 2">
+            <div class="project-content">
+                <h3>Project Two</h3>
+                <p>Custom web app with powerful backend and clean UI.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="https://via.placeholder.com/400x250" alt="Project 3">
+            <div class="project-content">
+                <h3>Project Three</h3>
+                <p>Interactive dashboard for data visualization and insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>© 2025 Harits | Built with ❤️ and Coffee</p>
+    </footer>
+
+</body>
+</html>

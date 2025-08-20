@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: bisque;
+            color: blanchedalmond;
+        }
+        nav {
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: brown;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            padding: 0 10px;
+        }
+        /* .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;  */
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            width: 120px;
+            height: 80px;
+            background-color: coral;
+            margin: 10px;
+        }
+
+
+        .box-fix {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            padding: 12px;
+            background-color: teal;
+            border-radius: 12px;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="logo.png" alt="">
+        <h2>My profil</h2></div>
+        <div><img src="hamburger.png" alt=""></div>
+    </nav>
+
+    <section class="container">
+        <div class="box"><img src="logo.png" alt=""></div>
+        <div class="box"><img src="logo.png" alt=""></div>
+        <div class="box"><img src="logo.png" alt=""></div>
+    </section>
+
+    <div class="box-fix">chat sekarang</div>
+</body>
+</html>
